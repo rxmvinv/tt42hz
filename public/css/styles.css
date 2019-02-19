@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+body, html {
+	margin: 0;
+	height: 100%;
+	min-width: 755px;
+	background: #0E1823;
+}
+
+.aligned-content {
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+}
+
+/* Navigation menu */
+
+.nav-menu {
+	background-color: #0E1823;
+	height: 80px;
+	/*
+	position: fixed;
+	*/
+	width: 90%;
+	top: 0;
+	display: none;
+	z-index: 10;
+	display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu .logo-main img {
+	max-height: 50px;
+}
+
+.nav-menu .get-started {
+	color: #fff;
+	background: #484B50;
+	display: block;
+    width: 200px;
+    padding: 16px 0;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-menu .get-started:hover {
+	color: #484B50;
+	background: #fff;
+	text-decoration: none;
+}
+.nav-menu .navigate-links a {
+	margin: auto 20px;
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Navigation menu */
+
+
+/* Main section */
+
+.main-section {
+	text-align: center;
+	color: #fff;
+}
+
+.main-section .main-header {
+	font-size: 55px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+
+.main-section .main-description {
+	font-size: 24px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.main-section .main-remark {
+	font-size: 18px;
+	opacity: 0.5;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.main-section .stores-buttons {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.main-section .stores-buttons a img {
+	width: 100%;
+    max-width: 218px;
+}
+.main-section .line-section {
+	width: 100%;
+}
+/* Main section */
+
+.line-section {
+	height: 1px;
+	background: #fff;
+	opacity: 0.2;
+}
+
+/* Choice section */
+
+.choice-section {
+	display: inline-block;
+	width: 100%;
+}
+
+.choice-section .start-point {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	font-size: 26px;
+}
+
+.choice-section .destination-point {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	font-size: 24px;
+}
+
+.choice-section .start-point .position,
+.choice-section .destination-point .position {
+	display: inline-block;
+	vertical-align: top;
+	opacity: 0.5;
+	font-weight: 300;
+	padding-right: 20px;
+}
+
+.choice-section .start-point .address-data,
+.choice-section .destination-point .address-data {
+	display: inline-block;
+	margin-top: 0;
+	font-size: 26px;
+}
+
+.choice-section .start-point .address-data .city,
+.choice-section .destination-point .address-data .city {
+	display: block;
+	opacity: 0.5;
+	font-weight: 300;
+	line-height: 3;
+}
+
+.choice-section .choice-information {
+	display: inline-flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.choice-section .choice-information .information-data .info-list {
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	max-width: 402px;
+	text-align: justify;
+	color: #fff;
+	margin-top: 0;
+}
+
+.choice-section .choice-information .information-data .info-list .item-seprator {
+	opacity: 0.5;
+    font-size: 24px;
+    vertical-align: text-bottom;
+    padding: 0 5px;
+}
+
+.choice-section .choice-information .information-data .info-list li {
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.choice-section .choice-information .information-data .info-list li span {
+	opacity: 0.5;
+}
+.choice-section .choice-information .information-data .info-list li .line-breaker {
+	width: 100%;
+}
+
+.choice-section .choice-menu {
+	width: 90%;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    list-style: none;
+    background: #121C27;
+    margin-top: 100px;
+}
+.choice-section .choice-menu li {
+	width: 22.5%;
+	text-align: center;
+	height: 75px;
+	position: relative;
+	border-bottom: 3px solid transparent;
+}
+
+.choice-section .choice-menu li a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.2;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+}
+.choice-section .choice-menu li:hover {
+	border-bottom: 3px solid #2FCC71;
+}
+.choice-section .choice-menu li:hover a {
+	color: #2FCC71;
+	opacity: 1;
+}
+
+/* Choice section */
+
+
+/* Footer */
+
+footer {
+	display: inline-block;
+	width: 100%;
+}
+
+/* Footer */
+
+@media screen and (max-width: 1330px) {
+
+}

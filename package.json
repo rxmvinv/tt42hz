@@ -1,0 +1,18 @@
+{
+  "name": "42Hz",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "ejs": "*",
+    "express": "*",
+    "jade": "*",
+    "morgan": "*",
+    "nodemon": "^1.18.10",
+    "serve-favicon": "*"
+  }
+}
