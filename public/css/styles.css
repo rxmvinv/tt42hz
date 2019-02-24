@@ -259,6 +259,8 @@ body, html {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 22px;
+	position: relative;
+    z-index: 3;
 }
 .choice-section .choice-submenu .cars-list .cars-list-item img {
 	width: 50%;
@@ -285,19 +287,20 @@ body, html {
 .choice-section .choice-submenu .cars-list .selected-car-item a {
 	color: #0E1823;
 }
-.choice-section .choice-submenu .cars-list .selected-car-item::after {
+.choice-section .choice-submenu .cars-list .selected-car-item::before {
 	content: "";
     display: block;
-    width: 0;
-    height: 0;
+    width: 36px;
+    height: 36px;
     position: absolute;
     bottom: -10px;
     margin: auto;
     left: 0;
     right: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid #fff;
+    background: #fff;
+    border-radius: 10px;
+    transform: rotate(315deg);
+    z-index: 1;
 }
 
 
@@ -470,39 +473,6 @@ footer {
 	background: #121C27;
 }
 
-footer .aligned-content {
-	display: inline-flex;
-}
-
-footer .footer-logo {
-	width: 100%;
-	max-width: 45px;
-}
-
-footer .download-appstore img {
-	max-width: 135px;
-	width: 100%;
-}
-
-footer .download-googleplay img {
-	max-width: 135px;
-	width: 100%;
-}
-
-footer .media-links a {
-	background: #484B50;
-	padding: 10px;
-	border-radius: 20px;
-}
-
-footer .media-links img {
-	width: 16px;
-}
-
-footer .footer-bottom {
-	background: #0E1823;
-}
-
 footer p {
 	color: #fff;
 	opacity: 0.5;
@@ -516,21 +486,119 @@ footer h3 {
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
+	line-height: 3;
 }
 
-footer input {
+footer .aligned-content {
+	display: inline-flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+
+footer .aligned-content .main-footer-section {
+	width: 25%;
+}
+
+footer .aligned-content .main-footer-section .footer-logo {
+	width: 100%;
+	max-width: 45px;
+}
+
+footer .aligned-content .main-footer-section .stores-buttons {
+	width: 95%;
+}
+
+footer .aligned-content .main-footer-section .stores-buttons .download-appstore {
+	display: inline-block;
+	float: left;
+}
+
+footer .aligned-content .main-footer-section .stores-buttons .download-googleplay {
+	display: inline-block;
+	float: right;
+}
+
+footer .aligned-content .main-footer-section .stores-buttons .download-appstore img {
+	max-width: 135px;
+	width: 100%;
+}
+
+footer .aligned-content .main-footer-section .stores-buttons .download-googleplay img {
+	max-width: 135px;
+	width: 100%;
+}
+
+footer .aligned-content .main-footer-section .main-text {
+	margin-bottom: 15%;
+}
+
+footer  .aligned-content .subscribe-footer-section {
+	width: 25%;
+}
+
+footer .aligned-content .subscribe-footer-section input {
 	color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+	background: #0E1823;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    height: 40px;
+    padding-left: 10px;
+    float: left;
+    display: inline-block;
+    width: 60%;
 }
 
-footer button {
+footer  .aligned-content .subscribe-footer-section button {
 	background: #484B50;
 	color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
+	text-transform: uppercase;
+    border: none;
+    height: 44px;
+    width: 100px;
+    display: inline-block;
+    float: left;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+footer  .aligned-content .subscribe-footer-section .media-links {
+	display: inline-block;
+    width: 98%;
+    margin-top: 35px;
+    text-align: right;
+}
+
+footer  .aligned-content .subscribe-footer-section .media-links a {
+	background: #484B50;
+	padding: 7px;
+	border-radius: 16px;
+	margin-left: 15px;
+}
+
+footer  .aligned-content .subscribe-footer-section .media-links img {
+	width: 16px;
+	vertical-align: text-bottom;
+}
+
+footer .footer-bottom {
+	background: #0E1823;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 90%;
+	padding: 0 5%;
+	align-items: center;
+}
+
+footer .footer-bottom a {
+	text-decoration: none;
+	color: #fff;
 }
 
 footer .footer-bottom .left-side {
@@ -538,6 +606,11 @@ footer .footer-bottom .left-side {
 	font-size: 14px;
 	font-weight: 300;
 	color: #fff;
+	display: inline-block;
+}
+
+footer .footer-bottom .right-side {
+	display: inline-block;
 }
 
 footer .footer-bottom .right-side ul li {
@@ -545,6 +618,13 @@ footer .footer-bottom .right-side ul li {
 	font-size: 14px;
 	font-weight: 300;
 	color: #fff;
+	display: inline-block;
+}
+
+footer .footer-bottom .right-side ul li:not(:first-child)::before {
+	content: '\00a0\2022\00a0\00a0';
+	font-family: 'Lato', sans-serif;
+	color:#fff;
 }
 
 /* Footer */
